@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Buddy - Smart Learning Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="app-container" id="app-container">
+    <div class="auth-container" id="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h1>AI Study Buddy</h1>
+                <p>Your Intelligent Learning Companion</p>
+            </div>
+
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="login-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="login-password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="auth-button login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </button>
+            </form>
+
+            <form id="register-form" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="register-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="register-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="register-password" required placeholder="Create a password (min. 6 characters)">
+                </div>
+                <button type="submit" class="auth-button register-btn">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+            </form>
+
+            <div class="auth-switch">
+                <span id="switch-text">Don't have an account?</span>
+                <button id="switch-button" class="switch-btn">Sign Up</button>
+            </div>
+
+            <div class="auth-features">
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Smart Learning</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <span>Code Support</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <span>Fast Responses</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-app" id="main-app" style="display: none;">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <div class="logo-text">
+                            <h1>AI Study Buddy</h1>
+                            <span class="tagline">Powered by Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-controls">
+                    <div class="user-welcome">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Welcome, <span id="user-name">User</span></span>
+                    </div>
+                    <button id="logout-btn" class="logout-button">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main-content">
+
+            <aside class="tools-sidebar">
+                <div class="sidebar-header">
+                    <h3><i class="fas fa-magic"></i> AI Tools</h3>
+                    <p>Choose your learning mode</p>
+                </div>
+
+                <div class="tool-buttons">
+                    <button class="tool-button" data-type="home">
+                        <div class="tool-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-title">Home</span>
+                            <span class="tool-desc">Back to homepage</span>
+                        </div>
+                    </button>
+
+                    <button class="tool-button active" data-type="general">
+                        <div class="tool-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-title">General Chat</span>
+                            <span class="tool-desc">Ask anything</span>
+                        </div>
+                    </button>
+
+                    <button class="tool-button" data-type="code">
+                        <div class="tool-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-title">Code Helper</span>
+                            <span class="tool-desc">Programming help</span>
+                        </div>
+                    </button>
+                    <button class="tool-button" data-type="quiz">
+                        <div class="tool-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-title">Quiz Master</span>
+                            <span class="tool-desc">Test your knowledge</span>
+                        </div>
+                    </button>
+
+                    <button class="tool-button" data-type="document">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-title">Document Analyzer</span>
+                            <span class="tool-desc">Analyze PDF/Images</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="sidebar-footer">
+                    <button id="clear-chat" class="clear-button">
+                        <i class="fas fa-broom"></i>
+                        Clear Chat
+                    </button>
+                </div>
+            </aside>
+
+            <section class="chat-area">
+                <div class="chat-header">
+                    <div class="current-tool">
+                        <i class="fas fa-home"></i>
+                        <span id="current-tool-text">Home</span>
+                    </div>
+                    <div class="chat-actions">
+                        <button id="copy-chat" class="copy-chat-btn">
+                            <i class="fas fa-copy"></i>
+                            Copy Chat
+                        </button>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="welcome-message" id="home-content">
+                        <div class="welcome-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h2>Welcome to AI Study Buddy! 🤖</h2>
+                        <p>Your intelligent learning companion. Choose a tool from the sidebar to get started!</p>
+
+                        <div class="tools-grid">
+                            <div class="tool-card" data-type="general">
+                                <div class="tool-card-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>General Chat</h3>
+                                <p>Ask anything and get AI-powered responses</p>
+                            </div>
+
+                            <div class="tool-card" data-type="code">
+                                <div class="tool-card-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Code Helper</h3>
+                                <p>Get programming help and debug code</p>
+                            </div>
+
+                            <div class="tool-card" data-type="quiz">
+                                <div class="tool-card-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <h3>Quiz Master</h3>
+                                <p>Test your knowledge with custom quizzes</p>
+                            </div>
+
+                            <div class="tool-card" data-type="document">
+                                <div class="tool-card-icon">
+                                    <i class="fas fa-file-upload"></i>
+                                </div>
+                                <h3>Document Analyzer</h3>
+                                <p>Upload and analyze PDFs, images, and documents</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-container" id="quiz-content" style="display: none;">
+                        <div class="quiz-setup">
+                            <h3>Create Your Quiz</h3>
+                            <div class="quiz-inputs">
+                                <div class="form-group">
+                                    <label>Topic</label>
+                                    <input type="text" id="quiz-topic" placeholder="e.g., Programming, History, Science">
+                                </div>
+                                <div class="form-group">
+                                    <label>Number of Questions</label>
+                                    <select id="quiz-count">
+                                        <option value="5">5 Questions</option>
+                                        <option value="10">10 Questions</option>
+                                        <option value="15">15 Questions</option>
+                                    </select>
+                                </div>
+                                <button id="generate-quiz" class="generate-quiz-btn">
+                                    <i class="fas fa-play"></i>
+                                    Generate Quiz
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="quiz-questions" id="quiz-questions" style="display: none;">
+                        </div>
+
+                        <div class="quiz-results" id="quiz-results" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="document-container" id="document-content" style="display: none;">
+                        <div class="document-upload">
+                            <h3>Document Analyzer</h3>
+                            <p>Upload an image or PDF for analysis</p>
+
+                            <div class="upload-area" id="upload-area">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag & drop files here or click to browse</p>
+                                <input type="file" id="file-input" accept=".pdf,.jpg,.jpeg,.png,.txt,.doc,.docx" style="display: none;">
+                                <button id="browse-btn" class="browse-btn">Browse Files</button>
+                            </div>
+
+                            <div class="file-preview" id="file-preview" style="display: none;">
+                            </div>
+
+                            <div class="analysis-instructions">
+                                <div class="form-group">
+                                    <label>Analysis Instructions (Optional)</label>
+                                    <textarea id="analysis-instructions" placeholder="e.g., 'Give feedback on this resume', 'Summarize this document', 'Explain this image'"></textarea>
+                                </div>
+                                <button id="analyze-document" class="analyze-btn" disabled>
+                                    <i class="fas fa-search"></i>
+                                    Analyze Document
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="analysis-results" id="analysis-results" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <div class="input-container general-input" id="general-input">
+                        <div class="input-actions">
+                        </div>
+                        <textarea
+                                id="prompt-input"
+                                placeholder="Ask me anything..."
+                                rows="1"
+                                maxlength="2000"
+                        ></textarea>
+                        <button id="send-button" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="quiz-controls" id="quiz-controls" style="display: none;">
+                        <button id="submit-quiz" class="submit-quiz-btn">
+                            <i class="fas fa-check-circle"></i>
+                            Submit Quiz
+                        </button>
+                        <button id="restart-quiz" class="restart-quiz-btn">
+                            <i class="fas fa-redo"></i>
+                            New Quiz
+                        </button>
+                    </div>
+
+                    <div class="input-footer">
+                        <div class="input-hint">
+                            <i class="fas fa-lightbulb"></i>
+                            <span id="input-hint-text">Pro Tip: Use specific questions for better answers</span>
+                        </div>
+                        <div class="char-count">
+                            <span id="char-counter">0</span>/2000
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
