@@ -1,5 +1,5 @@
 <h1>📚AI Study Buddy</h1>  
-A Smart Learning Companion Powered by **Gemini AI** + **Spring Boot**
+A Smart Learning Companion Powered by "Gemini AI" + "Spring Boot"
 
 AI Study Buddy is an intelligent learning tool that helps students study smarter using advanced AI capabilities.  
 Users can sign up, log in, and access multiple AI-powered tools from a clean dashboard UI.
