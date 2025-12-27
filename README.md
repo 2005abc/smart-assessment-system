@@ -78,8 +78,7 @@ From the left sidebar, user chooses:
 ## 📸 Screenshots
 
 ### 🔐 Authentication (Login)
-![Login Page](<img width="1366" height="677" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/fb83f11f-a29d-4754-9e02-be82b827d985" />
-)
+![Login Page](screenshots/login.png)
 
 ### 🏠 Dashboard
 ![Dashboard](screenshots/dashboard.png)
@@ -90,7 +89,8 @@ Ask programming questions and get AI-powered explanations.
 
 ### 🧠 Quiz Master
 Generate quizzes by topic and difficulty to test knowledge.
-![Quiz Master](screenshots/quiz-master.png)
+![Quiz Master](screenshots/qui<img width="1366" height="677" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/336ebcde-24f3-48ad-b811-b58f87ecb41d" />
+z-master.png)
 
 ### 📄 Document Analyzer
 Upload PDFs or images and get instant AI analysis.
