@@ -77,21 +77,19 @@ From the left sidebar, user chooses:
 - Maven  
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### 🔐 Authentication (Login)
-![Login Page](screenshots/login.png)
+<img src="https://github.com/user-attachments/assets/71d331e1-bc09-4e9b-830c-6c5229edb0c0" alt="Login Page" width="1000"/>
 
 ### 🏠 Dashboard
-![Dashboard](screenshots/dashboard.png)
+<img src="https://github.com/user-attachments/assets/688267c1-7550-42b5-be24-bfcc43aca8fa" alt="Dashboard" width="1000"/>
 
 ### 💻 Code Helper
-Ask programming questions and get AI-powered explanations.
-![Code Helper](screenshots/code-helper.png)
+<img src="https://github.com/user-attachments/assets/0f724e09-60b9-4d29-924a-68262b47611f" alt="Code Helper" width="1000"/>
 
 ### 🧠 Quiz Master
-Generate quizzes by topic and difficulty to test knowledge.
-![Quiz Master](screenshots/qui<img width="1366" height="677" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/336ebcde-24f3-48ad-b811-b58f87ecb41d" />
-z-master.png)
+<img src="https://github.com/user-attachments/assets/336ebcde-24f3-48ad-b811-b58f87ecb41d" alt="Quiz Master" width="1000"/>
 
 ### 📄 Document Analyzer
-Upload PDFs or images and get instant AI analysis.
-![Document Analyzer](screenshots/document-analyzer.png)
+<img src="https://github.com/user-attachments/assets/7fa4e3da-cbdb-4b9f-a561-efe4ae8d89ed" alt="Document Analyzer" width="1000"/>
