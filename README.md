@@ -74,8 +74,7 @@ From the left sidebar, user chooses:
 ### **Other Tools**
 - IntelliJ IDEA  
 - Git + GitHub  
-- Maven  
-## 📸 Screenshots
+- Maven
 
 ## 📸 Screenshots
 
