@@ -78,7 +78,8 @@ From the left sidebar, user chooses:
 ## 📸 Screenshots
 
 ### 🔐 Authentication (Login)
-![Login Page](screenshots/login.png)
+![Login Page](<img width="1366" height="677" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/fb83f11f-a29d-4754-9e02-be82b827d985" />
+)
 
 ### 🏠 Dashboard
 ![Dashboard](screenshots/dashboard.png)
