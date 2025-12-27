@@ -75,3 +75,22 @@ From the left sidebar, user chooses:
 - IntelliJ IDEA  
 - Git + GitHub  
 - Maven  
+## 📸 Screenshots
+
+### 🔐 Authentication (Login)
+![Login Page](screenshots/login.png)
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 💻 Code Helper
+Ask programming questions and get AI-powered explanations.
+![Code Helper](screenshots/code-helper.png)
+
+### 🧠 Quiz Master
+Generate quizzes by topic and difficulty to test knowledge.
+![Quiz Master](screenshots/quiz-master.png)
+
+### 📄 Document Analyzer
+Upload PDFs or images and get instant AI analysis.
+![Document Analyzer](screenshots/document-analyzer.png)
